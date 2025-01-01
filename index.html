@@ -111,19 +111,19 @@
                 <img src="https://github.com/ZestFlex390/maanja_store/blob/368b8fc70b9c9e4d80d753254cd0082e250594fd/starter-kit.jpg.png?raw=true" alt="Starter Kit">
                 <h3>Starter Kit</h3>
                 <p>Includes basic gear to get you started in Lifesteal mode.</p>
-                <button onclick="redirectToPayment()">Buy Now</button>
+                <button onclick="window.location.href='payment.html'">Buy Now</button>
             </div>
             <div class="kit-card">
                 <img src="https://github.com/ZestFlex390/maanja_store/blob/368b8fc70b9c9e4d80d753254cd0082e250594fd/warrior-kit.jpg.png?raw=true" alt="Warrior Kit">
                 <h3>Warrior Kit</h3>
                 <p>Arm yourself for battles with this powerful set.</p>
-                <button onclick="redirectToPayment()">Buy Now</button>
+                <button onclick="window.location.href='payment.html'">Buy Now</button>
             </div>
             <div class="kit-card">
                 <img src="https://github.com/ZestFlex390/maanja_store/blob/368b8fc70b9c9e4d80d753254cd0082e250594fd/elite-kit.jpg.png?raw=true" alt="Elite Kit">
                 <h3>Elite Kit</h3>
                 <p>Top-tier equipment for experienced players.</p>
-                <button onclick="redirectToPayment()">Buy Now</button>
+                <button onclick="window.location.href='payment.html'">Buy Now</button>
             </div>
         </div>
     </div>
@@ -131,12 +131,5 @@
     <footer>
         <p>&copy; 2025 Maanja Lifesteal Store. All rights reserved.</p>
     </footer>
-
-    <script>
-        function redirectToPayment() {
-            document.getElementById('kits').style.display = 'none';
-            document.getElementById('payment').style.display = 'block';
-        }
-    </script>
 </body>
 </html>
