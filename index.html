@@ -80,6 +80,15 @@
             padding: 10px 0;
             margin-top: 20px;
         }
+        .payment {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .payment img {
+            max-width: 200px;
+            margin: 10px 0;
+        }
     </style>
 </head>
 <body>
@@ -102,26 +111,40 @@
                 <img src="https://via.placeholder.com/150" alt="Starter Kit">
                 <h3>Starter Kit</h3>
                 <p>Includes basic gear to get you started in Lifesteal mode.</p>
-                <button>Buy Now</button>
+                <button onclick="redirectToPayment()">Buy Now</button>
             </div>
             <div class="kit-card">
                 <img src="https://via.placeholder.com/150" alt="Warrior Kit">
                 <h3>Warrior Kit</h3>
                 <p>Arm yourself for battles with this powerful set.</p>
-                <button>Buy Now</button>
+                <button onclick="redirectToPayment()">Buy Now</button>
             </div>
             <div class="kit-card">
                 <img src="https://via.placeholder.com/150" alt="Elite Kit">
                 <h3>Elite Kit</h3>
                 <p>Top-tier equipment for experienced players.</p>
-                <button>Buy Now</button>
+                <button onclick="redirectToPayment()">Buy Now</button>
             </div>
         </div>
+    </div>
+
+    <div class="container payment" id="payment" style="display: none;">
+        <h2>Complete Your Payment</h2>
+        <p>Scan the QR code below to pay via Paytm:</p>
+        <img src="https://via.placeholder.com/200" alt="Paytm QR Code">
+        <p>After payment, please create a ticket in our Discord server:</p>
+        <p><a href="https://dsc.gg/topwantsgaming" target="_blank">dsc.gg/topwantsgaming</a></p>
     </div>
 
     <footer>
         <p>&copy; 2025 Maanja Lifesteal Store. All rights reserved.</p>
     </footer>
+
+    <script>
+        function redirectToPayment() {
+            document.getElementById('kits').style.display = 'none';
+            document.getElementById('payment').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
-
