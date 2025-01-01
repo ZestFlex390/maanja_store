@@ -5,90 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maanja Lifesteal Store</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-        }
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 14px;
-        }
-        nav a:hover {
-            background-color: #575757;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .kit-card {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 20px;
-            text-align: center;
-            margin: 10px;
-            background: #fafafa;
-        }
-        .kit-card img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        .kit-card h3 {
-            margin: 10px 0;
-        }
-        .kit-card button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .kit-card button:hover {
-            background-color: #45a049;
-        }
-        .kits {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        footer {
-            text-align: center;
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-        .payment {
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        .payment img {
-            max-width: 200px;
-            margin: 10px 0;
-        }
+        /* Your existing styles here */
     </style>
 </head>
 <body>
@@ -108,32 +25,24 @@
         <h2>Available Kits</h2>
         <div class="kits">
             <div class="kit-card">
-                <img src="<img src="https://github.com/ZestFlex390/maanja_store/blob/368b8fc70b9c9e4d80d753254cd0082e250594fd/starter-kit.jpg.png?raw=true" alt="Starter Kit">">
+                <img src="https://github.com/ZestFlex390/maanja_store/blob/368b8fc70b9c9e4d80d753254cd0082e250594fd/starter-kit.jpg.png?raw=true" alt="Starter Kit">
                 <h3>Starter Kit</h3>
                 <p>Includes basic gear to get you started in Lifesteal mode.</p>
                 <button onclick="redirectToPayment()">Buy Now</button>
             </div>
             <div class="kit-card">
-                <img src="https://github.com/ZestFlex390/maanja_store/blob/368b8fc70b9c9e4d80d753254cd0082e250594fd/warrior-kit.jpg.png"> alt="Warrior Kit"
+                <img src="https://github.com/ZestFlex390/maanja_store/blob/368b8fc70b9c9e4d80d753254cd0082e250594fd/warrior-kit.jpg.png?raw=true" alt="Warrior Kit">
                 <h3>Warrior Kit</h3>
                 <p>Arm yourself for battles with this powerful set.</p>
                 <button onclick="redirectToPayment()">Buy Now</button>
             </div>
             <div class="kit-card">
-                <img src="https://github.com/ZestFlex390/maanja_store/blob/368b8fc70b9c9e4d80d753254cd0082e250594fd/elite-kit.jpg.png" alt="Elite Kit">
+                <img src="https://github.com/ZestFlex390/maanja_store/blob/368b8fc70b9c9e4d80d753254cd0082e250594fd/elite-kit.jpg.png?raw=true" alt="Elite Kit">
                 <h3>Elite Kit</h3>
                 <p>Top-tier equipment for experienced players.</p>
                 <button onclick="redirectToPayment()">Buy Now</button>
             </div>
         </div>
-    </div>
-
-    <div class="container payment" id="payment" style="display: none;">
-        <h2>Complete Your Payment</h2>
-        <p>Scan the QR code below to pay via Paytm:</p>
-        <img src="https://github.com/ZestFlex390/maanja_store/blob/58ed9948ef2949b12dca15e5a76c1a53a8529db1/paytm_qr.png?raw=true" alt="Paytm QR Code">
-        <p>After payment, please create a ticket in our Discord server:</p>
-        <p><a href="https://dsc.gg/topwantsgaming" target="_blank">dsc.gg/topwantsgaming</a></p>
     </div>
 
     <footer>
